@@ -365,6 +365,6 @@ form {
     height: 60px !important; 
     object-fit: contain !important; /* بتخلي الصورة تتحشر جوه الـ 60px من غير ما تتمط */
     
-    z-index: 999 !important;
+    z-index: 9 !important;
 }
 
