@@ -363,17 +363,17 @@ form {
     margin-bottom: 10px; /* سيب مسافة تحت اللوجو قبل العنوان */
 }
 
-/* التعديل داخل الميديا كويري للموبايل */
 @media screen and (max-width: 650px) {
+    /* 1. نخلي الحاوية هي المرجع */
     .toggle-panel {
-        position: relative !important; /* ده اللي كان ناقص! */
+        position: relative !important;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: center; /* عشان اللوجو يسنتر نفسه */
     }
 
-     .main-top-logo {
+    /* 2. تصغير اللوجو جداً في الموبايل */
+    .main-top-logo {
         position: relative !important; /* غيرناها من absolute لـ relative */
         width: 80px !important;       /* صغرنا الحجم جداً */
         margin-top: 20px;
@@ -384,5 +384,8 @@ form {
     /* 3. تنزيل العنوان تحت اللوجو */
     .toggle-panel h1 {
         margin-top: 0 !important;
+    }
+}
+
     }
 }
