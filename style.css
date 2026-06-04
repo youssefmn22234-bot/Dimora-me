@@ -366,16 +366,23 @@ form {
 /* التعديل داخل الميديا كويري للموبايل */
 @media screen and (max-width: 650px) {
     .toggle-panel {
-        position: relative; /* ده اللي كان ناقص! */
+        position: relative !important; /* ده اللي كان ناقص! */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .main-top-logo {
-        position: absolute;
-        top: 10px;
-        left: 10px;
+     .main-top-logo {
+        position: relative !important; /* غيرناها من absolute لـ relative */
+        width: 80px !important;       /* صغرنا الحجم جداً */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    /* 3. تنزيل العنوان تحت اللوجو */
+    .toggle-panel h1 {
+        margin-top: 0 !important;
     }
 }
