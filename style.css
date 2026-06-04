@@ -354,8 +354,14 @@ form {
 .container {
     position: relative;
 }
-/* إخفاء نصوص الترحيب مؤقتاً */
+
+/* إخفاء عناصر الترحيب بقوة قصوى */
 .toggle-panel h1, 
 .toggle-panel p {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
