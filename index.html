@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Signup form - Codewithflow</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+    <!-- login form -->
+    <div class="form-box login">
+        <form action="#">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="forget-link">
+                <a href="#">Forget password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <p>Or login with Google</p>
+<button type="button" class="google-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="google-icon">
+    <span>Google</span>
+</button>
+        </form>
+      </div>
+      <!-- register form  -->
+      <div class="form-box register">
+        <form action="#">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <p>Or login with Google</p>
+
+<button type="button" class="google-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="google-icon">
+    <span>Google</span>
+</button>
+        </form>
+      </div>
+                    <!-- toggle box -->
+        <div class="toggle-box">
+            <!-- toggle box left -->
+            <div class="toggle-panel toggle-left">
+             <img src="Logodimora.webp" alt="Dimora Logo" class="main-top-logo"> 
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an Account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+
+            <!-- toggle box right -->
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an Account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
