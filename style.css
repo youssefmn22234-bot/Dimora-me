@@ -342,7 +342,7 @@ form {
   }
 
   .btn {
-    height: 45px;
+    height: 45x;
     font-size: 14px;
   }
 
@@ -353,39 +353,4 @@ form {
 
 .container {
     position: relative;
-}
-
-/* تنسيق اللوجو الأساسي */
-.main-top-logo {
-    width: 70px;
-    height: auto;
-    z-index: 5;
-    margin-bottom: 10px; /* سيب مسافة تحت اللوجو قبل العنوان */
-}
-
-@media screen and (max-width: 650px) {
-    /* 1. نخلي الحاوية هي المرجع */
-    .toggle-panel {
-        position: relative !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* عشان اللوجو يسنتر نفسه */
-    }
-
-    /* 2. تصغير اللوجو جداً في الموبايل */
-    .main-top-logo {
-        position: relative !important; /* غيرناها من absolute لـ relative */
-        width: 80px !important;       /* صغرنا الحجم جداً */
-        margin-top: 20px;
-        margin-bottom: 20px;
-        display: block;
-    }
-
-    /* 3. تنزيل العنوان تحت اللوجو */
-    .toggle-panel h1 {
-        margin-top: 0 !important;
-    }
-}
-
-    }
 }
