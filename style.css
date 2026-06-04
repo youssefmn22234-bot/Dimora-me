@@ -354,3 +354,11 @@ form {
 .container {
     position: relative;
 }
+.main-top-logo {
+    position: absolute;  /* عشان نحركه بحرية في الزاوية */
+    top: 20px;           /* مسافة من فوق */
+    left: 20px;          /* مسافة من الشمال */
+    width: 120px;        /* عدل المقاس اللي يناسبك */
+    z-index: 10;         /* عشان يفضل فوق أي حاجة */
+}
+ 
