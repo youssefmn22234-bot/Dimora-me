@@ -354,3 +354,8 @@ form {
 .container {
     position: relative;
 }
+/* إخفاء نصوص الترحيب مؤقتاً */
+.toggle-panel h1, 
+.toggle-panel p {
+    display: none !important;
+}
