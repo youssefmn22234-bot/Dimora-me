@@ -354,8 +354,3 @@ form {
 .container {
     position: relative;
 }
-.main-top-logo {
-    width: 60px !important;
-    display: block;
-    margin: 10px auto;
-}
