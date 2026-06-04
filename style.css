@@ -356,8 +356,8 @@ form {
 }
 .main-top-logo {
     position: absolute !important;
-    top: 5px !important;
-    left: 5px !important;
+    top: 30px !important;
+    left: 30px !important;
     
     /* دي اللي هتجبر الصورة "الـ JPG" إنها تسمع الكلام */
     width: 60px !important;  
@@ -365,6 +365,6 @@ form {
     height: 60px !important; 
     object-fit: contain !important; /* بتخلي الصورة تتحشر جوه الـ 60px من غير ما تتمط */
     
-    z-index: 50 !important;
+    z-index: 15 !important;
 }
 
