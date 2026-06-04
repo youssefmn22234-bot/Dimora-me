@@ -354,19 +354,17 @@ form {
 .container {
     position: relative;
 }
-/* تنسيق اللوجو في الزاوية فوق على الشمال */
 .main-top-logo {
-    position: absolute;  /* عشان يتثبت في مكانه */
-    top: 10px;           /* مسافة من فوق */
-    left: 10px;          /* مسافة من الشمال */
-    width: 80px !important;  /* صغرناه لـ 80 بكسل عشان ما يغطيش على الصفحة */
-    height: auto !important; /* يحافظ على تناسق الأبعاد */
-    z-index: 100;        /* يفضل ظاهر فوق أي حاجة */
-}
-
-/* إخلاء مساحة في الـ Panel نفسه */
-.toggle-panel {
-    position: relative; /* ضروري عشان الـ absolute للوجو يشتغل صح */
-    padding-top: 60px;  /* سيبنا مساحة فوق عشان اللوجو ما يخبطش في الكلام */
+    position: absolute !important;
+    top: 5px !important;
+    left: 5px !important;
+    
+    /* دي اللي هتجبر الصورة "الـ JPG" إنها تسمع الكلام */
+    width: 60px !important;  
+    max-width: 60px !important; 
+    height: 60px !important; 
+    object-fit: contain !important; /* بتخلي الصورة تتحشر جوه الـ 60px من غير ما تتمط */
+    
+    z-index: 999 !important;
 }
 
