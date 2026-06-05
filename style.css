@@ -355,7 +355,17 @@ form {
     position: relative;
 }
 
+
+/* ده شكل الزرار الأساسي بتاعك (سيبه زي ما هو) */
 .register-btn {
-    transition: all 0.3s ease-in-out !important; /* دي اللي بتخلي الزرار "ينبض" ويلمع */
-    cursor: pointer;
+    transition: all 0.3s ease;
+    /* ... باقي التنسيقات بتاعتك ... */
+}
+
+/* ده الكلاس اللي هنضيفه لما الخانات تتملأ */
+.register-btn.glowing {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.05);
+    background-color: #6c63ff; /* تأكد إنه نفس لون الزرار الأصلي */
+    color: white;
 }
