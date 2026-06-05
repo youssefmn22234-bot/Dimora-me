@@ -18,3 +18,25 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn("واحد أو أكثر من العناصر (container, registerBtn, loginBtn) غير موجود في الـ HTML.");
     }
 });
+// كود "اللمعة" الجديد
+const registerBtn = document.getElementById('registerBtn');
+const registerInputs = document.querySelectorAll('.form-box.register input');
+
+function updateButtonState() {
+    let allFilled = true;
+    registerInputs.forEach(input => {
+        if (input.value === "") allFilled = false;
+    });
+
+    if (allFilled) {
+        registerBtn.style.boxShadow = "0 0 15px rgba(255, 255, 255, 0.5)"; // تأثير اللمعة
+        registerBtn.style.transform = "scale(1.02)";
+    } else {
+        registerBtn.style.boxShadow = "none";
+        registerBtn.style.transform = "scale(1)";
+    }
+}
+
+registerInputs.forEach(input => {
+    input.addEventListener('input', updateButtonState);
+});
