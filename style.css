@@ -355,3 +355,7 @@ form {
     position: relative;
 }
 
+.register-btn {
+    transition: all 0.3s ease-in-out !important; /* دي اللي بتخلي الزرار "ينبض" ويلمع */
+    cursor: pointer;
+}
